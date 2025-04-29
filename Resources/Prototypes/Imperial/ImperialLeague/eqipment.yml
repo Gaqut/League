@@ -172,7 +172,7 @@
 
 - type: entity
   id: mp5-MagazineLeague
-  mame: SMG magazine (.35 auto)
+  name: SMG magazine (.35 auto)
   parent: mp5-Magazine
   suffix: CS
   components:
@@ -369,7 +369,6 @@
     price: 20
 
 - type: entity
-  noSpawn: true
   parent: BaseBullet
   id: BulletAntiMaterielLeague
   name: bullet (.60 anti-materiel)
@@ -447,9 +446,6 @@
   name: ammo drum (.50 shells)
   parent: BaseMagazineRifle
   components:
-  - type: Tag
-    tags:
-    - BaseMagazineShotgunStormTrooperTGMC
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -505,7 +501,8 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    coefficient: 0.001
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
   - type: ExplosionResistance
     damageCoefficient: 0.85
   - type: Armor
@@ -883,7 +880,6 @@
 - type: entity
   name: soaplet
   id: SoapletSyndieLeague
-  noSpawn: true
   parent: Soap
   description: A tiny piece of syndicate soap.
   components:

@@ -231,7 +231,7 @@
     - LeagueClothing
     - LeagueMedicine
     - LeagueAmmo
-    - LeagueArmorCenter
+#    - LeagueArmorCenter
     currencyWhitelist:
     - ImperCoin
     balance:
