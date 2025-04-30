@@ -31,7 +31,7 @@ ent-LeagueFlagBlue = Флаг спавна синих
     .desc = Флаг, указывающий на точку спавна синих. Дабуди дабудай!
 
 ent-LeagueFlagPointBlue = Спавн синих
-    .suffix - Лига, Спавн, Синий
+    .suffix = Лига, Спавн, Синий
 
 ent-LeagueFlagPointGreen = Спавн зелёных
     .suffix = Лига, Спавн, Зеленый
