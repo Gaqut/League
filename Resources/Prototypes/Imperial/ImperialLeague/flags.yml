@@ -2,6 +2,8 @@
   id: LeagueFlagRed
   parent: LeagueFlagRedTracker
   name: league red spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
 #  - type: LeagueFlag
 #    team: red
@@ -15,6 +17,8 @@
   id: LeagueFlagBlue
   parent: LeagueFlagBlueTracker
   name: league blue spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
 #  - type: LeagueFlag
 #    team: blue
@@ -28,6 +32,8 @@
   id: LeagueFlagYellow
   parent: LeagueFlagYellowTracker
   name: league yellow spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
 #  - type: LeagueFlag
 #    team: yellow
@@ -41,6 +47,8 @@
   id: LeagueFlagViolet
   parent: LeagueFlagVioletTracker
   name: league red spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
 #  - type: LeagueFlag
 #    team: violet
@@ -54,6 +62,8 @@
   id: LeagueFlagRedTracker
   parent: BannerRed
   name: league red spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
   - type: PointLight
     color: red
@@ -82,6 +92,8 @@
   id: LeagueFlagBlueTracker
   parent: BannerBlue
   name: league blue spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
   - type: PointLight
     color: blue
@@ -110,6 +122,8 @@
   id: LeagueFlagYellowTracker
   parent: BannerYellow
   name: league yellow spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
   - type: PointLight
     color: yellow
@@ -138,6 +152,8 @@
   id: LeagueFlagVioletTracker
   parent: BannerScience
   name: league violet spawn point
+  descripton: Some text. I want in Dubai. #Real
+  suffix: league
   components:
   - type: PointLight
     color: purple
