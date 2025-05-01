@@ -1,12 +1,11 @@
+#Light-Tank
+
 - type: entity
   id: TonkProjectileLT
   name: boom
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
-  - type: Tag
-    tags:
-      - TonkProjectiles
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -17,14 +16,29 @@
         Piercing: 210
 
 - type: entity
-  id: TonkProjectileMT
-  name: boom
+  id: TonkProjectileLTS
+  name: Sub
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
-  - type: Tag
-    tags:
-      - TonkProjectiles
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 175
+    ignoreResistances: true
+
+#Middle-Tank
+
+- type: entity
+  id: TonkProjectileMT
+  name: AP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -35,14 +49,29 @@
         Piercing: 330
 
 - type: entity
-  id: TonkProjectileHT
-  name: boom
+  id: TonkProjectileMTS
+  name: Sub
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
-  - type: Tag
-    tags:
-      - TonkProjectiles
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 280
+    ignoreResistances: true
+
+#Heavy-Tank
+
+- type: entity
+  id: TonkProjectileHT
+  name: AP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -53,14 +82,53 @@
         Piercing: 420
 
 - type: entity
-  id: TonkProjectileAT
-  name: boom
+  id: TonkProjectileHTS
+  name: Sub
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
-  - type: Tag
-    tags:
-      - TonkProjectiles
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 380
+    ignoreResistances: true
+
+- type: entity
+  id: TonkProjectileHTHE
+  name: HE
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: practice
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 510
+  - type: TriggerOnCollide
+    fixtureID: projectile
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 1
+    intensitySlope: 1
+    totalIntensity: 1
+    maxTileBreak: 0
+
+#Anti-Tank
+
+- type: entity
+  id: TonkProjectileAT
+  name: AP
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -69,7 +137,43 @@
     damage:
       types:
         Piercing: 650
+
+- type: entity
+  id: TonkProjectileATC
+  name: Cumulative
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: bullet
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 540
     ignoreResistances: true
 
-- type: Tag
-  id: TonkProjectiles
+- type: entity
+  id: TonkProjectileATHE
+  name: HE
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: practice
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 960
+  - type: TriggerOnCollide
+    fixtureID: projectile
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 1
+    intensitySlope: 1
+    totalIntensity: 1
+    maxTileBreak: 0

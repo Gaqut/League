@@ -22,6 +22,7 @@ using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Whitelist;
+using Content.Shared.MouseRotator; //League Tanks
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -232,6 +233,12 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             return;
         }
+
+        if (TryComp<MouseRotatorComponent>(user, out var rotator) && rotator.GoalRotation != null)
+        {
+            PopupSystem.PopupCursor(Loc.GetString("gun-need-full-rotate"));
+            return;
+        } // League Tanks
 
         var toCoordinates = gun.ShootCoordinates;
 
