@@ -152,7 +152,7 @@
   id: LeagueFlagVioletTracker
   parent: BannerScience
   name: league violet spawn point
-  descripton: Some text. I want in Dubai. #Real
+  description: Some text. I want in Dubai. #Real
   suffix: League, Spawn, Violet
   components:
   - type: PointLight

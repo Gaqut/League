@@ -46,7 +46,7 @@
 - type: entity
   id: MagazineLightRifleCaseless
   name: "magazine (.30 rifle)"
-  desc: Some ammo magazine .30 rifle.
+  description: Some ammo magazine .30 rifle.
   suffix: League, Cartriges
   parent: BaseMagazineLightRifle
   components:
