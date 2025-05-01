@@ -54,6 +54,7 @@
   id: LeagueFlagPointRed
   parent: MarkerBase
   name: league red spawn point
+  description: Do u really need it there?
   suffix: League, Spawn, Red
   components:
     - type: Sprite
@@ -69,6 +70,7 @@
   id: LeagueFlagPointGreen
   parent: MarkerBase
   name: league green spawn point
+  description: Im coming for ya!
   suffix: League, Spawn, Green
   components:
     - type: Sprite
@@ -84,6 +86,7 @@
   id: LeagueFlagPointBlue
   parent: MarkerBase
   name: league blue spawn point
+  description: hating YMAL Linter(Yes, YMAL)
   suffix: League, Spawn, Blue
   components:
     - type: Sprite
@@ -100,6 +103,7 @@
   parent: MarkerBase
   name: league yellow spawn point
   suffix: League, Spawn, Yellow
+  description: Some text(hating YAML linter)
   components:
     - type: Sprite
       netsync: false

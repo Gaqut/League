@@ -31,12 +31,15 @@ ent-LeagueFlagBlue = Флаг спавна синих
     .desc = Флаг, указывающий на точку спавна синих. Дабуди дабудай!
 
 ent-LeagueFlagPointBlue = Спавн синих
+    .desc = Указатель спавна синих
     .suffix = Лига, Спавн, Синий
 
 ent-LeagueFlagPointGreen = Спавн зелёных
+    .desc = Указатель спавна зелёных
     .suffix = Лига, Спавн, Зеленый
 
 ent-LeagueFlagPointRed = Спавн красных
+    .desc = Указатель спавна красных
     .suffix = Лига, Спавн, Красный
 
 ent-LeagueFlagRed = Флаг спавна красных
@@ -64,4 +67,5 @@ ent-LeagueFlagYellow = Флаг спавна жёлтых
     .desc = Флаг, указывающий на точку спавна жёлтых. Слава Китаю!
 
 ent-LeagueFlagPointYellow = Спавн жёлтых
+    .desc = Указатель спавна жёлтых
     .suffix = Лига, Спавн, Желтый
