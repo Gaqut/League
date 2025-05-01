@@ -5,6 +5,7 @@
     - /Audio/Imperial/ImperialLeague/LeagueTanks/Damage/hit2.ogg
     - /Audio/Imperial/ImperialLeague/LeagueTanks/Damage/hit3.ogg
     - /Audio/Imperial/ImperialLeague/LeagueTanks/Damage/hit4.ogg
+    - /Audio/Imperial/ImperialLeague/LeagueTanks/Damage/hit5.ogg
 
 - type: soundCollection
   id: TanksTracksLight

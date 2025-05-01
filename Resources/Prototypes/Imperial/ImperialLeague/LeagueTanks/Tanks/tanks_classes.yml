@@ -15,12 +15,12 @@
       path: /Audio/Imperial/ImperialLeague/LeagueTanks/Shots/middle_tank.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - TonkProjectiles
-    capacity: 100
-    proto: TonkProjectileMT
+#  - type: BallisticAmmoProvider
+#    whitelist:
+#      tags:
+#      - TonkProjectiles
+#    capacity: 100
+#    proto: TonkProjectileMT
 
 - type: entity
   parent: LeagueTank
@@ -43,12 +43,18 @@
       path: /Audio/Imperial/ImperialLeague/LeagueTanks/Shots/light_tank.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - TonkProjectiles
-    capacity: 50
+  - type: ProjectileBatteryAmmoProvider
     proto: TonkProjectileLT
+    fireCost: 1
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: TonkProjectileLT #Бронебойный
+      fireCost: 1
+    - proto: TonkProjectileLTS #Подкалибер
+      fireCost: 1
+  - type: Battery
+    maxCharge: 50
+    startingCharge: 50
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 3
@@ -67,8 +73,10 @@
       collection: TanksTracksLight
       params:
         volume: -12
-#  - type: Loadout
-#    prototypes: [ LightTank ]
+  - type: Loadout
+    prototypes: [ LightTank ]
+  - type: MouseRotator
+    rotationSpeed: 110
 
 - type: entity
   parent: LeagueTank
@@ -91,12 +99,18 @@
       path: /Audio/Imperial/ImperialLeague/LeagueTanks/Shots/middle_tank.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - TonkProjectiles
-    capacity: 42
+  - type: ProjectileBatteryAmmoProvider
     proto: TonkProjectileMT
+    fireCost: 1
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: TonkProjectileMT #Бронебойный
+      fireCost: 1
+    - proto: TonkProjectileMTS #Подкалибер
+      fireCost: 1
+  - type: Battery
+    maxCharge: 42
+    startingCharge: 42
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.2
     baseSprintSpeed : 2.2
@@ -114,6 +128,8 @@
         volume: -12
   - type: Loadout
     prototypes: [ MiddleTank ]
+  - type: MouseRotator
+    rotationSpeed: 90
 
 - type: entity
   parent: LeagueTank
@@ -136,12 +152,20 @@
       path: /Audio/Imperial/ImperialLeague/LeagueTanks/Shots/heavy_tank.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - TonkProjectiles
-    capacity: 35
+  - type: ProjectileBatteryAmmoProvider
     proto: TonkProjectileHT
+    fireCost: 1
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: TonkProjectileHT #Бронебойный
+      fireCost: 1
+    - proto: TonkProjectileHTS #Подкалибер
+      fireCost: 1
+    - proto: TonkProjectileHTHE #Осколочно-Фугасный
+      fireCost: 1
+  - type: Battery
+    maxCharge: 35
+    startingCharge: 35
   - type: MovementSpeedModifier
     baseWalkSpeed : 1.4
     baseSprintSpeed : 1.4
@@ -159,6 +183,9 @@
         volume: -12
   - type: Loadout
     prototypes: [ HeavyTank ]
+  - type: MouseRotator
+    rotationSpeed: 60
+
 
 - type: entity
   parent: LeagueTank
@@ -181,12 +208,20 @@
       path: /Audio/Imperial/ImperialLeague/LeagueTanks/Shots/anti_tank.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-  - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - TonkProjectiles
-    capacity: 20
+  - type: ProjectileBatteryAmmoProvider
     proto: TonkProjectileAT
+    fireCost: 1
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: TonkProjectileAT #Бронебойный
+      fireCost: 1
+    - proto: TonkProjectileATC #Кумулятивный
+      fireCost: 1
+    - proto: TonkProjectileATHE #Осколочно-Фугасный
+      fireCost: 1
+  - type: Battery
+    maxCharge: 20
+    startingCharge: 20
   - type: MovementSpeedModifier
     baseWalkSpeed : 1.5
     baseSprintSpeed : 1.5
@@ -205,5 +240,20 @@
       collection: TanksTracksHeavy
       params:
         volume: -12
-#  - type: Loadout
-#    prototypes: [ AntiTank ]
+  - type: Loadout
+    prototypes: [ AntiTank ]
+  - type: MouseRotator
+    rotationSpeed: 70
+
+#Test tank with a 8 directions of sprite
+- type: entity
+  parent: LeagueAntiTank
+  id: LeagueAntiTankTest
+  name: ISU-Test
+  suffix: LeagueTanks, Test
+  components:
+  - type: Sprite
+    sprite: Imperial/ImperialLeague/Tanks/isu_test.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
