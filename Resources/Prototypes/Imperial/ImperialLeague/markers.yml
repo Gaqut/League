@@ -3,6 +3,7 @@
   parent: MarkerBase
   name: league red spawn point
   suffix: League, Spawn, Red
+  description: Red respawn point.
   components:
     - type: Sprite
       netsync: false
@@ -16,6 +17,7 @@
   parent: MarkerBase
   name: league green spawn point
   suffix: League, Spawn, Green
+  description: Green respawn point.
   components:
     - type: Sprite
       netsync: false
@@ -29,6 +31,7 @@
   parent: MarkerBase
   name: league blue spawn point
   suffix: League, Spawn, Blue
+  description: Blue respawn point.
   components:
     - type: Sprite
       netsync: false
@@ -42,6 +45,7 @@
   parent: MarkerBase
   name: league yellow spawn point
   suffix: League, Spawn, Yellow
+  description: Yellow respawn point.
   components:
     - type: Sprite
       netsync: false

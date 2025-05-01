@@ -183,6 +183,7 @@
   id: SpawnPointGhostLeagueRed
   name: ghost role spawn point tdm red
   suffix: League, Spawn, Red
+  description: Red spawn
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -202,6 +203,7 @@
   id: SpawnPointGhostLeagueBlue
   name: ghost role spawn point tdm blue
   suffix: League, Spawn, Blue
+  description: Blue spawn.
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -221,6 +223,7 @@
   id: SpawnPointGhostLeagueYellow
   name: ghost role spawn point tdm yellow
   suffix: League, Spawn, Yellow
+  description: Yellow spawn.
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -240,6 +243,7 @@
   id: SpawnPointGhostLeagueViolet
   name: ghost role spawn point tdm violet
   suffix: League, Spawn, Violet
+  description: Violet spawn.
   parent: MarkerBase
   components:
   - type: GhostRole

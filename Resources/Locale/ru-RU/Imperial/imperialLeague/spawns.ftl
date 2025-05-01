@@ -1,26 +1,34 @@
 ent-SpawnPointGhostLeagueRed = Гост-роль красных
     .suffix = Лига, Спавн, Красный
+    .desc = Спавн гост-роли красного бойца
 
 ent-SpawnPointGhostLeagueViolet = Гост-роль фиолетовых
     .suffix = Лига, Спавн, Фиолетовый
+    .desc = Спавн гост-роли фиолетового бойца
 
 ent-SpawnPointGhostLeagueBlue = Гост-роль синих
     .suffix = Лига, Спавн, Синий
+    .desc = Спавн гост-роли синего бойца
 
 ent-SpawnPointGhostLeagueYellow = Гост-роль жёлтых
     .suffix = Лига, Спавн, Желтый
+    .desc = Спавн гост-роли жёлтого бойца
 
 ent-LeagueRespawnPointBlue = Точка респавна синих
     .suffix = Лига, Спавн, Синий
+    .desc = Тут респавн синих будет.
 
 ent-LeagueRespawnPointGreen = Точка респавна зелёных
     .suffix = Лига, Спавн, Зеленый
+    .desc = Тут респавн зелёных будет.
 
 ent-LeagueRespawnPointRed = Точка респавна красных
     .suffix = Лига, Спавн, Красный
+    .desc = Тут респавн красных будет.
 
 ent-LeagueRespawnPointYellow = Точка респавна жёлтых
     .suffix = Лига, Спавн, Желтый
+    .desc = Тут респавн жёлтых будет.
 
 ent-LeagueFlagBlueTracker = Флаг спавна синих
     .suffix = Лига, Спавн, Синий
