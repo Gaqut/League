@@ -33,6 +33,8 @@
 - type: entity
   id: BushLeague0
   parent: BaseBushLeague
+  suffix: League, Cover
+  description: Favorite gamlet's bush. Do not smell!
   components:
   - type: Sprite
     state: bush0

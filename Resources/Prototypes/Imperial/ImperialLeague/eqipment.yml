@@ -2,6 +2,7 @@
   name: AKMS
   parent: WeaponRifleAk
   id: WeaponRifleAkLeague
+  suffix: League, Weapon
   description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
   - type: Item
@@ -38,11 +39,15 @@
 - type: entity
   id: MagazinePistolCaselessRifleLeague
   name: "magazine (.30 rifle)"
+  suffix: League, Cartriges
+  description: USP-S magazine. Why it has no sound?
   parent: MagazinePistolCaselessRifle
 
 - type: entity
   id: MagazineLightRifleCaseless
   name: "magazine (.30 rifle)"
+  desc: Some ammo magazine .30 rifle.
+  suffix: League, Cartriges
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -60,8 +65,8 @@
   name: glock-18
   parent: CSWeaponGlock-18
   id: CSWeaponGlock-18League
-  suffix: CS
-  description: #descriprion
+  suffix: League, Weapon
+  description: Honk. No one would see this. By Gaqut
   components:
   - type: Sprite
     sprite: Imperial/Other/CS/Weapon/glock18.rsi
@@ -104,7 +109,8 @@
   id: Glock18MagazinePistolLeague
   name: glock18 magazine (.35 auto)
   parent: BaseMagazinePistol
-  suffix: CS
+  suffix: League, Cartriges
+  description: Some magazine with .35 auto ammo.
   components:
   - type: BallisticAmmoProvider
     capacity: 17
@@ -128,6 +134,8 @@
 - type: entity
   id: CartridgePistolLeague
   name: cartridge (.35 auto)
+  suffix: League, Cartriges
+  description: Ammo for .35 auto gun.
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -138,7 +146,7 @@
   name: MP5
   parent: CSWeaponMP5
   id: CSWeaponMP5League
-  suffix: CS
+  suffix: League, Weapon
   description: Not the most reliable German. It happens?
   components:
   - type: Item
@@ -174,7 +182,8 @@
   id: mp5-MagazineLeague
   name: SMG magazine (.35 auto)
   parent: mp5-Magazine
-  suffix: CS
+  suffix: League, Cartriges
+  description: Just some magazine for MP5. Uses .35 auto.
   components:
   - type: BallisticAmmoProvider
     capacity: 28
@@ -187,6 +196,7 @@
   name: energy sword
   parent: EnergySword
   id: EnergySwordLeague
+  suffix: League, Weapon
   description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
   components:
   - type: DisarmMalus
@@ -196,7 +206,7 @@
   name: usp-s
   id: CSWeaponUSP-SLeague
   parent: WeaponPistolCobra
-  suffix: CS
+  suffix: League, Weapon
   description: Pew-Pew, fourty seven.
   components:
   - type: Item
@@ -234,6 +244,7 @@
   id: ClothingBeltSonaLeague
   name: league sona belt
   description: The standard security belt of the S-o.N.A. AI Dynamics corporation. Buyed for a league.
+  suffix: League, Clothes
   components:
   - type: Item
     size: Small
@@ -251,6 +262,7 @@
   id: ClothingBackpackSatchelLeague
   name: league satchel
   description: uwu
+  suffix: League, Clothes
   components:
   - type: Unremoveable
 
@@ -259,6 +271,7 @@
   id: ClothingUniformJumpsuitOperativeLeague
   name: league operative jumpsuit
   description: uwu
+  suffix: League, Clothes
   components:
   - type: Unremoveable
 
@@ -267,6 +280,7 @@
   id: ClothingShoesBootsCombatFilledLeague
   name: league combat boots
   description: uwu
+  suffix: League, Clothes
   components:
   - type: Unremoveable
 
@@ -275,6 +289,7 @@
   id: ClothingHandsGlovesCombatLeague
   name: league combat gloves
   description: uwu
+  suffix: League, Clothes
   components:
   - type: Unremoveable
 
@@ -283,6 +298,7 @@
   id: GrenadeShrapnelLeague
   name: shrapnel grenade
   description: Releases a deadly spray of shrapnel that causes severe bleeding.
+  suffix: League, Weapon
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/shrapnelgrenade.rsi
@@ -295,7 +311,7 @@
   description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
   parent: BaseHealingItem
   id: MedicatedSutureLeague
-  suffix: Full
+  suffix: League, Medicine
   components:
   - type: Tag
     tags:
@@ -330,6 +346,7 @@
   name: Hristov
   parent: BaseWeaponSniper
   id: WeaponSniperHristovLeague
+  suffix: League, Weapon
   description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo.
   components:
   - type: Item
@@ -350,6 +367,8 @@
   parent: BaseCartridge
   id: CartridgeAntiMaterielLeague
   name: cartridge (.60 anti-materiel)
+  suffix: League, Cartriges
+  description: Boom shakalaka!
   components:
   - type: Tag
     tags:
@@ -384,12 +403,16 @@
 - type: entity
   parent: PowerCellMedium
   id: PowerCellMediumLeague
+  suffix: League, Battery
+  description: What is it? Is it a gun?
   name: power cell
 
 - type: entity
   parent: WeaponLaserSvalinn
   id: WeaponLaserSvalinnLeague
   name: ba
+  suffix: League, Weapon
+  description: Just some laser gun. Does it matter?
   components:
   - type: Item
     size: Ginormous
@@ -414,6 +437,7 @@
   name: StormTrooper
   parent: BaseWeaponShotgun
   id: WeaponShotgunStormTrooperTGMCSBLeague
+  suffix: League, Weapon
   description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells.
   components:
   - type: Sprite
@@ -445,6 +469,8 @@
   id: BaseMagazineShotgunStormTrooperTGMCLeague
   name: ammo drum (.50 shells)
   parent: BaseMagazineRifle
+  suffix: League, Cartriges
+  description: Just some shotgun magazine Dabudi Dabudai!
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -476,6 +502,8 @@
 - type: entity
   id: ShellShotgunLeague
   name: shell (.50)
+  suffix: League, Cartriges
+  description: What am I doing with my life?..
   parent: ShellShotgunImprovised
   components:
   - type: Sprite
@@ -527,6 +555,7 @@
   id: ClothingOuterHardsuitLeagueLightBlue
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Blue, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightArmor/blue.rsi
@@ -540,6 +569,7 @@
   id: ClothingOuterHardsuitLeagueLightRed
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Red, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightArmor/red.rsi
@@ -553,6 +583,7 @@
   id: ClothingOuterHardsuitLeagueLightViolet
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Violet, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightArmor/violet.rsi
@@ -566,6 +597,7 @@
   id: ClothingOuterHardsuitLeagueLightYellow
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Yellow, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightArmor/yellow.rsi
@@ -579,6 +611,7 @@
   id: ClothingOuterHardsuitLeagueHeavyBlue
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Blue, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyArmor/blue.rsi
@@ -592,6 +625,7 @@
   id: ClothingOuterHardsuitLeagueHeavyRed
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Red, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyArmor/red.rsi
@@ -605,6 +639,7 @@
   id: ClothingOuterHardsuitLeagueHeavyViolet
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Violet, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyArmor/violet.rsi
@@ -618,6 +653,7 @@
   id: ClothingOuterHardsuitLeagueHeavyYellow
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Yellow, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyArmor/yellow.rsi
@@ -669,6 +705,7 @@
   id: ClothingHeadHelmetHardsuitLeagueHeavyBlue
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Blue, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyHelmets/blue.rsi
@@ -680,6 +717,7 @@
   id: ClothingHeadHelmetHardsuitLeagueHeavyRed
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Red, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyHelmets/red.rsi
@@ -691,6 +729,7 @@
   id: ClothingHeadHelmetHardsuitLeagueHeavyViolet
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Violet, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyHelmets/violet.rsi
@@ -702,6 +741,7 @@
   id: ClothingHeadHelmetHardsuitLeagueHeavyYellow
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Yellow, HA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/HeavyHelmets/yellow.rsi
@@ -714,6 +754,7 @@
   id: ClothingHeadHelmetHardsuitLeagueLightBlue
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Blue, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightHelmets/blue.rsi
@@ -725,6 +766,7 @@
   id: ClothingHeadHelmetHardsuitLeagueLightRed
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Red, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightHelmets/red.rsi
@@ -736,6 +778,7 @@
   id: ClothingHeadHelmetHardsuitLeagueLightViolet
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Violet, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightHelmets/violet.rsi
@@ -747,6 +790,7 @@
   id: ClothingHeadHelmetHardsuitLeagueLightYellow
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+  suffix: League, Clothes, Yellow, LA, Hardsuit
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Armor/LightHelmets/yellow.rsi
@@ -839,6 +883,7 @@
   id: ClothingUniformJumpsuitLeagueBlue
   name: shit cloth
   description: hoho
+  suffix: League, Clothes, Blue
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Jumpsuits/blue.rsi
@@ -850,6 +895,7 @@
   id: ClothingUniformJumpsuitLeagueRed
   name: shit cloth
   description: hoho
+  suffix: League, Clothes, Red
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Jumpsuits/red.rsi
@@ -861,6 +907,7 @@
   id: ClothingUniformJumpsuitLeagueYellow
   name: shit cloth
   description: hoho
+  suffix: League, Clothes, Yellow
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Jumpsuits/yellow.rsi
@@ -872,6 +919,7 @@
   id: ClothingUniformJumpsuitLeagueViolet
   name: shit cloth
   description: hoho
+  suffix: League, Clothes, Violet
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Jumpsuits/violet.rsi
@@ -883,6 +931,7 @@
   id: SoapletSyndieLeague
   parent: Soap
   description: A tiny piece of syndicate soap.
+  suffix: League, Soap
   components:
   - type: Sprite
     layers:
@@ -922,6 +971,7 @@
   id: SlipocalypseClusterSoapLeague
   name: slipocalypse clustersoap
   description: Spreads small pieces of syndicate soap over an area upon landing on the floor.
+  suffix: League, Soap
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/soap.rsi
@@ -933,7 +983,7 @@
   parent: WeaponShotgunDoubleBarreled
   id: WeaponShotgunDoubleBarreledLeague
   description: An immortal classic. Uses .50 shotgun shells.
-  suffix: Non-Lethal
+  suffix: League, Weapon
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgunLeague

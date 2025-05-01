@@ -2,7 +2,7 @@
   id: LeagueRespawnPointRed
   parent: MarkerBase
   name: league red spawn point
-  suffix: league
+  suffix: League, Spawn, Red
   components:
     - type: Sprite
       netsync: false
@@ -15,7 +15,7 @@
   id: LeagueRespawnPointGreen
   parent: MarkerBase
   name: league green spawn point
-  suffix: league
+  suffix: League, Spawn, Green
   components:
     - type: Sprite
       netsync: false
@@ -28,7 +28,7 @@
   id: LeagueRespawnPointBlue
   parent: MarkerBase
   name: league blue spawn point
-  suffix: league
+  suffix: League, Spawn, Blue
   components:
     - type: Sprite
       netsync: false
@@ -41,7 +41,7 @@
   id: LeagueRespawnPointYellow
   parent: MarkerBase
   name: league yellow spawn point
-  suffix: league
+  suffix: League, Spawn, Yellow
   components:
     - type: Sprite
       netsync: false
@@ -54,7 +54,7 @@
   id: LeagueFlagPointRed
   parent: MarkerBase
   name: league red spawn point
-  suffix: league
+  suffix: League, Spawn, Red
   components:
     - type: Sprite
       netsync: false
@@ -69,7 +69,7 @@
   id: LeagueFlagPointGreen
   parent: MarkerBase
   name: league green spawn point
-  suffix: league
+  suffix: League, Spawn, Green
   components:
     - type: Sprite
       netsync: false
@@ -84,7 +84,7 @@
   id: LeagueFlagPointBlue
   parent: MarkerBase
   name: league blue spawn point
-  suffix: league
+  suffix: League, Spawn, Blue
   components:
     - type: Sprite
       netsync: false
@@ -99,7 +99,7 @@
   id: LeagueFlagPointYellow
   parent: MarkerBase
   name: league yellow spawn point
-  suffix: league
+  suffix: League, Spawn, Yellow
   components:
     - type: Sprite
       netsync: false

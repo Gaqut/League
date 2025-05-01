@@ -134,7 +134,8 @@
   parent: BaseWeaponBallisticTurret
   id: BaseLeagueTurretDisposable
   name: disposable ballistic turret
-  suffix: base, Disposable
+  suffix: League, Turret, Disposable
+  description: Some turret. Why r u reading and not running?
   components:
   - type: NpcFactionMember
     factions:
@@ -179,7 +180,8 @@
   parent: BaseLeagueTurretDisposable
   id: LeagueTurretDisposableRed
   name: disposable ballistic turret
-  suffix: Red
+  suffix: League, Turret, Disposable, Red
+  description: Some red turret. Why r u reading and not running?
   components:
   - type: NpcFactionMember
     factions:
@@ -189,7 +191,8 @@
   parent: BaseLeagueTurretDisposable
   id: LeagueTurretDisposableBlue
   name: disposable ballistic turret
-  suffix: Blue
+  suffix: League, Turret, Disposable, Blue
+  description: Some blue turret. Why r u reading and not running?
   components:
   - type: NpcFactionMember
     factions:
@@ -199,7 +202,8 @@
   parent: BaseLeagueTurretDisposable
   id: LeagueTurretDisposableYellow
   name: disposable ballistic turret
-  suffix: base, Disposable
+  suffix: League, Turret, Disposable, Yellow
+  description: Some yellow turret. Why r u reading and not running?
   components:
   - type: NpcFactionMember
     factions:
@@ -209,7 +213,8 @@
   parent: BaseLeagueTurretDisposable
   id: LeagueTurretDisposableViolet
   name: disposable ballistic turret
-  suffix: base, Disposable
+  suffix: League, Turret, Disposable, Violet
+  description: Some violet turret. Why r u reading and not running?
   components:
   - type: NpcFactionMember
     factions:
