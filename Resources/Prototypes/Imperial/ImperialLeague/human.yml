@@ -2,6 +2,8 @@
   name: league_base
   parent: MobHuman
   id: MobHumanLeagueBase
+  suffix: League, Warrior
+  description: What is that? This is BOMBARDIRO CROCODILO
   components:
   - type: Loadout
     prototypes: [LeagueBase]
@@ -105,6 +107,8 @@
   name: league_red
   parent: MobHumanLeagueBase
   id: MobHumanLeagueRed
+  suffix: League, Warrior, Red
+  description: Does anyone need it?
   components:
 #  #- type: LeagueRed
 #  - type: LeagueRespawn
@@ -122,6 +126,8 @@
   name: league_violet
   parent: MobHumanLeagueBase
   id: MobHumanLeagueViolet
+  suffix: League, Warrior, Violet
+  description: Does anyone need it?
   components:
 #  #- type: LeagueGreen
 #  - type: LeagueRespawn
@@ -139,6 +145,8 @@
   name: league_blue
   parent: MobHumanLeagueBase
   id: MobHumanLeagueBlue
+  suffix: League, Warrior, Blue
+  description: Does anyone need it?
   components:
 #  #- type: LeagueBlue
 #  - type: LeagueRespawn
@@ -156,6 +164,8 @@
   name: league_yellow
   parent: MobHumanLeagueBase
   id: MobHumanLeagueYellow
+  suffix: League, Warrior, Yellow
+  description: Does anyone need it? It's China, babe!
   components:
 #  #- type: LeagueYellow
 #  - type: LeagueRespawn
@@ -172,7 +182,8 @@
 - type: entity
   id: SpawnPointGhostLeagueRed
   name: ghost role spawn point tdm red
-  suffix: space ninja
+  suffix: League, Spawn, Red
+  description: Red spawn
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -190,8 +201,9 @@
 
 - type: entity
   id: SpawnPointGhostLeagueBlue
-  name: ghost role spawn point tdm red
-  suffix: space ninja
+  name: ghost role spawn point tdm blue
+  suffix: League, Spawn, Blue
+  description: Blue spawn.
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -209,8 +221,9 @@
 
 - type: entity
   id: SpawnPointGhostLeagueYellow
-  name: ghost role spawn point tdm red
-  suffix: space ninja
+  name: ghost role spawn point tdm yellow
+  suffix: League, Spawn, Yellow
+  description: Yellow spawn.
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -228,8 +241,9 @@
 
 - type: entity
   id: SpawnPointGhostLeagueViolet
-  name: ghost role spawn point tdm red
-  suffix: space ninja
+  name: ghost role spawn point tdm violet
+  suffix: League, Spawn, Violet
+  description: Violet spawn.
   parent: MarkerBase
   components:
   - type: GhostRole

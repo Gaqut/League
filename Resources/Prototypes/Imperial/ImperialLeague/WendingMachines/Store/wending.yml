@@ -110,6 +110,8 @@
 - type: entity
   parent: VendingMachineLeague
   id: VendingMachineLeagueBlue
+  suffix: League, Machine, Blue
+  description: Blue vending machine.
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/VendingMachines/blue.rsi
@@ -136,6 +138,8 @@
 - type: entity
   parent:  VendingMachineLeague
   id: VendingMachineLeagueRed
+  suffix: League, Machine, Red
+  description: Red vending machine.
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/VendingMachines/red.rsi
@@ -162,6 +166,8 @@
 - type: entity
   parent: VendingMachineLeague
   id: VendingMachineLeagueYellow
+  suffix: League, Machine, Yellow
+  description: Yellow vending machine.
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/VendingMachines/yellow.rsi
@@ -188,6 +194,8 @@
 - type: entity
   parent: VendingMachineLeague
   id: VendingMachineLeagueViolet
+  suffix: League, Machine, Violet
+  description: Violet vending machine.
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/VendingMachines/violet.rsi
@@ -214,6 +222,8 @@
 - type: entity
   parent: VendingMachineLeague
   id: VendingMachineLeagueCenter
+  suffix: League, Machine
+  description: Central vending machine.
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/VendingMachines/center.rsi

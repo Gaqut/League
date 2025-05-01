@@ -26,7 +26,7 @@
   parent: LeagueTank
   id: LeagueLightTank
   name: LTTB-L
-  suffix: LeagueTanks, LT
+  suffix: LeagueTanks, LT, Tank
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/lttb_l.rsi
@@ -74,7 +74,7 @@
   parent: LeagueTank
   id: LeagueMiddleTank
   name: T-L
-  suffix: LeagueTanks, MT
+  suffix: LeagueTanks, MT, Tank
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/t_l.rsi
@@ -119,7 +119,7 @@
   parent: LeagueTank
   id: LeagueHeavyTank
   name: IS-L
-  suffix: LeagueTanks, HT
+  suffix: LeagueTanks, HT, Tank
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/is_l.rsi
@@ -164,7 +164,7 @@
   parent: LeagueTank
   id: LeagueAntiTank
   name: ISU-L
-  suffix: LeagueTanks, AT
+  suffix: LeagueTanks, AT, Tank
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/isu_l.rsi

@@ -1,10 +1,10 @@
 - type: storeCategory
   id: LeagueCenter
-  name: store-category-league-weaapon
+  name: store-category-league-weapon
 
 - type: storeCategory
   id: LeagueWeapon
-  name: store-category-league-weaapon
+  name: store-category-league-weapon
 
 - type: storeCategory
   id: LeagueClothing
@@ -20,21 +20,21 @@
 
 - type: storeCategory
   id: LeagueArmorBase
-  name: store-category-league-armmor-base
+  name: store-category-league-armor-base
 
 - type: storeCategory
   id: LeagueArmorBlue
-  name: store-category-league-armmor-base
+  name: store-category-league-armor-base
 
 - type: storeCategory
   id: LeagueArmorRed
-  name: store-category-league-armmor-base
+  name: store-category-league-armor-base
 
 - type: storeCategory
   id: LeagueArmorYellow
-  name: store-category-league-armmor-base
+  name: store-category-league-armor-base
 
 - type: storeCategory
   id: LeagueArmorViolet
-  name: store-category-league-armmor-base
+  name: store-category-league-armor-base
 

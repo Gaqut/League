@@ -37,6 +37,7 @@
 - type: entity
   parent: ImperCoin
   id: ImperCoin1
+  description: Bugagaga!
   suffix: 1 coin
   components:
   - type: Stack
