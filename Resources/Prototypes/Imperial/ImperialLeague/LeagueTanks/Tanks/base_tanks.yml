@@ -184,9 +184,10 @@
 
 - type: entity
   parent: BaseTanksQuirk
-  id: TanksQuirkArmorLight
+  id: TanksQuirkArmorLightLeague
   name: foil armor
   description: Nothing more than foil...
+  suffix: League, Tank, Armor
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/Staff/tanks_armor.rsi
@@ -201,9 +202,10 @@
 
 - type: entity
   parent: BaseTanksQuirk
-  id: TanksQuirkArmorAnti
+  id: TanksQuirkArmorAntiLeague
   name: light armor
   description: Cardboard and a drop of armor.
+  suffix: League, Tank, Armor
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/Staff/tanks_armor.rsi
@@ -219,9 +221,10 @@
 
 - type: entity
   parent: BaseTanksQuirk
-  id: TanksQuirkArmorMiddle
+  id: TanksQuirkArmorMiddleLeague
   name: middle armor
   description: You have an average defense against enemy attacks. Does not work against tank destroyers.
+  suffix: League, Tank, Armor
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/Staff/tanks_armor.rsi
@@ -237,9 +240,10 @@
 
 - type: entity
   parent: BaseTanksQuirk
-  id: TanksQuirkArmorHeavy
+  id: TanksQuirkArmorHeavyLeague
   name: heavy armor
   description: You have a high defense against enemy attacks. Does not work against tank destroyers.
+  suffix: League, Tank, Armor
   components:
   - type: Sprite
     sprite: Imperial/ImperialLeague/Tanks/Staff/tanks_armor.rsi
@@ -258,19 +262,19 @@
 - type: startingGear #gear
   id: LightTank
   equipment:
-    neck: TanksQuirkArmorLight
+    neck: TanksQuirkArmorLightLeague
 
 - type: startingGear #gear
   id: MiddleTank
   equipment:
-    neck: TanksQuirkArmorMiddle
+    neck: TanksQuirkArmorMiddleLeague
 
 - type: startingGear #gear
   id: HeavyTank
   equipment:
-    neck: TanksQuirkArmorHeavy
+    neck: TanksQuirkArmorHeavyLeague
 
 - type: startingGear #gear
   id: AntiTank
   equipment:
-    neck: TanksQuirkArmorAnti
+    neck: TanksQuirkArmorAntiLeague

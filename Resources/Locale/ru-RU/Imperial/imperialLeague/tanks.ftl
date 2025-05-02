@@ -61,3 +61,23 @@ ent-LeagueAntiTankYellow = ISU-L
 ent-LeagueAntiTankBlue = ISU-L
     .suffix = Лига, Танк, АТ
     .desc = Неповоротливая машина с колоссальным уроном и слабой защитой. Окрашен в синий.
+
+
+gun-need-full-rotate = Башне требуется полный поворот, подождите.
+
+
+ent-TanksQuirkArmorLightLeague = Броня из фольги
+    .suffix = Лига, Танк, Броня
+    .desc = Ничего, кроме фольги...
+
+ent-TanksQuirkArmorAntiLeague = Лёгкая броня
+    .suffix = Лига, Танк, Броня
+    .desc = Картон и капля брони.
+
+ent-TanksQuirkArmorMiddleLeague = Обычная броня
+    .suffix = Лига, Танк, Броня
+    .desc = У тебя есть стандартная защита против вражеских атак. Вас всё равно пробьют Анти-Танки.
+
+ent-TanksQuirkArmorHeavyLeague = Тяжёлая броня
+    .suffix = Лига, Танк, Броня
+    .desc = У тебя есть высокая защита против вражеских атак. Вас всё равно пробьют Анти-Танки.
