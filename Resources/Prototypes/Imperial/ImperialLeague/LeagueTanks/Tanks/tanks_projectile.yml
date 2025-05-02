@@ -1,8 +1,12 @@
+# AP - Бронебойный. Базовый снаряд.
+# Sub и Cumulative - Подкалибреный и кумулятивный соответственно. Улучшенные снаряды. Игнорят броню, но у них пониженный урон.
+# HE - Осколочно-фугасный. Огромный урон, но только по слабо бронированным целям.
+
 #Light-Tank
 
 - type: entity
   id: TonkProjectileLT
-  name: boom
+  name: AP
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
