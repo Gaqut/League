@@ -1,0 +1,225 @@
+# Team departments
+
+- type: department
+  id: RedTeam
+  name: team-Red
+  description: team-red-description
+  color: "#ff0000"
+  roles:
+  - LeagueRedParticipant
+  primary: false
+
+- type: department
+  id: BlueTeam
+  name: team-Blue
+  description: team-blue-description
+  color: "#1e00ff"
+  roles:
+  - LeagueBlueParticipant
+  primary: false
+
+- type: department
+  id: YellowTeam
+  name: team-Yellow
+  description: team-yellow-description
+  color: "#f6ff00"
+  roles:
+  - LeagueYellowParticipant
+  primary: false
+
+- type: department
+  id: VioletTeam
+  name: team-Violet
+  description: team-violet-description
+  color: "#c300ff"
+  roles:
+  - LeagueVioletParticipant
+  primary: false
+
+# Tracker
+
+- type: playTimeTracker
+  id: LeagueRedParticipant
+
+- type: playTimeTracker
+  id: LeagueBlueParticipant
+
+- type: playTimeTracker
+  id: LeagueYellowParticipant
+
+- type: playTimeTracker
+  id: LeagueVioletParticipant
+
+# Roles
+
+- type: job
+  id: LeagueRedParticipant
+  name: role-name-red-participant
+  description: role-description-red-participant
+  playTimeTracker: LeagueRedParticipant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: RedTeam
+      time: 1000000 #League improvised team whitelist timer
+  startingGear: LeagueRed
+  icon: "roleIconRed"
+  supervisors: role-supervisors-league
+  canBeAntag: false
+  access:
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+#  - !type:NpcFactionMember
+#    factions:
+#    - LeagueRed
+
+- type: job
+  id: LeagueBlueParticipant
+  name: role-name-blue-participant
+  description: role-description-blue-participant
+  playTimeTracker: LeagueBlueParticipant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: BlueTeam
+      time: 1000000 #League improvised team whitelist timer
+  startingGear: LeagueBlue
+  icon: "roleIconBlue"
+  supervisors: role-supervisors-league
+  canBeAntag: false
+  access:
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+#  - !type:NpcFactionMember
+#    factions:
+#    - LeagueBlue
+
+- type: job
+  id: LeagueYellowParticipant
+  name: role-name-yellow-participant
+  description: role-description-yellow-participant
+  playTimeTracker: LeagueYellowParticipant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: YellowTeam
+      time: 1000000 #League improvised team whitelist timer
+  startingGear: LeagueYellow
+  icon: "roleIconYellow"
+  supervisors: role-supervisors-league
+  canBeAntag: false
+  access:
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+#  - !type:NpcFactionMember
+#    factions:
+#    - LeagueYellow
+
+- type: job
+  id: LeagueVioletParticipant
+  name: role-name-violet-participant
+  description: role-description-violet-participant
+  playTimeTracker: LeagueVioletParticipant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: VioletTeam
+      time: 1000000 #League improvised team whitelist timer
+  startingGear: LeagueViolet
+  icon: "roleIconViolet"
+  supervisors: role-supervisors-league
+  canBeAntag: false
+  access:
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+#  - !type:NpcFactionMember
+#    factions:
+#    - LeagueViolet
+
+# Spawn
+
+- type: entity
+  id: SpawnPointLeagueRed
+  parent: SpawnPointJobBase
+  name: Red Participant
+  components:
+  - type: SpawnPoint
+    job_id: LeagueRedParticipant
+  - type: Sprite
+    netsync: false
+    sprite: Imperial/ImperialLeague/Marks/spawn.rsi
+    state: spawnred
+
+- type: entity
+  id: SpawnPointLeagueBlue
+  parent: SpawnPointJobBase
+  name: Blue Participant
+  components:
+  - type: SpawnPoint
+    job_id: LeagueBlueParticipant
+  - type: Sprite
+    netsync: false
+    sprite: Imperial/ImperialLeague/Marks/spawn.rsi
+    state: spawnblue
+
+- type: entity
+  id: SpawnPointLeagueYellow
+  parent: SpawnPointJobBase
+  name: Yellow Participant
+  components:
+  - type: SpawnPoint
+    job_id: LeagueYellowParticipant
+  - type: Sprite
+    netsync: false
+    sprite: Imperial/ImperialLeague/Marks/spawn.rsi
+    state: spawnyellow
+
+- type: entity
+  id: SpawnPointLeagueViolet
+  parent: SpawnPointJobBase
+  name: Violet Participant
+  components:
+  - type: SpawnPoint
+    job_id: LeagueVioletParticipant
+  - type: Sprite
+    netsync: false
+    sprite: Imperial/ImperialLeague/Marks/spawn.rsi
+    state: spawnviolet
+
+# Job icons
+
+- type: jobIcon
+  parent: JobIcon
+  id: roleIconRed
+  icon:
+    sprite: /Textures/Imperial/ImperialLeague/Marks/teamroles.rsi
+    state: roleIconRed
+  jobName: Red Participant
+
+- type: jobIcon
+  parent: JobIcon
+  id: roleIconBlue
+  icon:
+    sprite: /Textures/Imperial/ImperialLeague/Marks/teamroles.rsi
+    state: roleIconBlue
+  jobName: Blue Participant
+
+- type: jobIcon
+  parent: JobIcon
+  id: roleIconYellow
+  icon:
+    sprite: /Textures/Imperial/ImperialLeague/Marks/teamroles.rsi
+    state: roleIconYellow
+  jobName: Yellow Participant
+
+- type: jobIcon
+  parent: JobIcon
+  id: roleIconViolet
+  icon:
+    sprite: /Textures/Imperial/ImperialLeague/Marks/teamroles.rsi
+    state: roleIconViolet
+  jobName: Violet Participant
