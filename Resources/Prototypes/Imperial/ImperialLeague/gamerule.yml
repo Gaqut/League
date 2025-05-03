@@ -14,3 +14,21 @@
 #  noSpawn: true
 #  components:
 #  - type: LeagueBingoRule
+
+- type: gamePreset
+  id: LeagueBase
+  alias:
+    - deathmatch
+    - dm
+  name: league-title
+  showInVote: True
+  description: league-description
+  supportedMaps: LeagueMapPool
+  rules:
+  - BasicStationEventScheduler
+  - BasicRoundstartVariation
+
+- type: gameMapPool
+  id: LeagueMapPool
+  maps:
+  - Lobby

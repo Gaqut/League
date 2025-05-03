@@ -1,0 +1,10 @@
+- type: entity
+  id: LobbyStationPreset
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationAlertLevels
+    - BaseStationNanotrasen
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform

@@ -1,0 +1,34 @@
+#- type: gameMap
+#  id: LeagueLobby
+#  mapName: Lobby
+#  mapPath: /Prototypes/Imperial/ImperialLeague/LeagueLobby/LeagueLobby.yml
+#  minPlayers: 1
+#  maxPlayers: 120
+#  stations:
+#    LeagueLobby:
+#      stationProto: LobbyStationPreset
+#      components:
+#      - type: StationJobs
+#        availableJobs:
+#          LeagueRedParticipant: [ 4, 4 ]
+#          LeagueBlueParticipant: [ 4, 4 ]
+#          LeagueYellowParticipant: [ 4, 4 ]
+#          LeagueVioletParticipant: [ 4, 4 ]
+
+- type: gameMap
+  id: Lobby
+  mapName: Lobby
+  mapPath: /Maps/Imperial/ImperialLeague/lobby2.yml #/Maps/Imperial/ImperialLeague/lobby.yml
+  minPlayers: 0
+  stations:
+    Lobby:
+      stationProto: LobbyStationPreset
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Lobby"
+        - type: StationJobs
+          availableJobs:
+            LeagueRedParticipant: [ -1, -1 ]
+            LeagueBlueParticipant: [ -1, -1 ]
+            LeagueYellowParticipant: [ -1, -1 ]
+            LeagueVioletParticipant: [ -1, -1 ]
